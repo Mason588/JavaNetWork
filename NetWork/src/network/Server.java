@@ -9,12 +9,12 @@ import java.net.Socket;
 public class Server {
 
 	public static void main(String[] args) {
-		
+		startServer();
 	}
 
-	public void startServer() {
+	public  static void  startServer() {
 		try {
-			ServerSocket serverSocket = new ServerSocket(7777);
+			ServerSocket serverSocket = new ServerSocket(1234);
 			Socket socket = serverSocket.accept();
 			
 			DataInputStream in  = new DataInputStream(socket.getInputStream());
